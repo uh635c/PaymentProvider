@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  r2dbc:
+    url: r2dbc:pool:postgres://localhost:5432/TransactionsDB
+    username: postgres
+    password: test
+  flyway:
+    url: jdbc:postgresql://localhost:5432/TransactionsDB
+    user: postgres
+    password: test
+    locations: classpath:db/migration
+
+
